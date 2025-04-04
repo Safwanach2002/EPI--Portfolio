@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - EPI</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <!-- Background GIF -->
+    <div class="background"></div>
+
+    <!-- Content -->
+    <div class="content-container">
+        <h1>EPI</h1>
+        <p>Welcome to Easy Purchase Investment</p>
+
+        <!-- Button Section -->
+        <div class="button-container">
+            <a href="{% url 'index' %}">
+                <button class="btn">English</button>
+            </a>
+
+            <a href="{% url 'indexM' %}">
+                <button class="btn">മലയാളം</button>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

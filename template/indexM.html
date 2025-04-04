@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>പോർട്ട്ഫോളിയോ</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <h1>ഉള്ളടക്കം</h1>
+
+    {% for item in contentM %}
+        <div class="content-item">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            
+            {% if item.video %}
+                <video controls>
+                    <source src="{{ item.video.url }}" type="video/mp4">
+                    നിങ്ങളുടെ ബ്രൗസർ ഈ വീഡിയോ പിന്തുണയ്ക്കുന്നില്ല.
+                </video>
+            {% endif %}
+
+            {% if item.image %}
+                <img src="{{ item.image.url }}" alt="{{ item.title }} ചിത്രം">
+            {% endif %}
+        </div>
+        <hr>
+    {% empty %}
+        <p>ഇവിടെ ഉള്ളടക്കം ഇല്ല.</p>
+    {% endfor %}
+</body>
+</html>
+
