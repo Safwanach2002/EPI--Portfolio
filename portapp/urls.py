@@ -7,8 +7,6 @@ urlpatterns = [
     path('', views.home, name='home'),  # Home page
     path('index/', views.index, name='index'),  # Default English page
     path('ml/', views.indexM, name='indexM'),  # Malayalam page
-    path('en/', views.indexE, name='indexE'),
-    
 ]
 
 if settings.DEBUG:

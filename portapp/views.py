@@ -1,19 +1,31 @@
 from django.shortcuts import render
-from .models import ContentE,ContentM
+from .models import Aboutsection, AboutsectionM, Service, ServiceM, Testimonial, TestimonialM
 
 # Create your views here.
 
 def home(request):
     return render(request, 'home.html')
 
-def indexE(request):
-    contentE = ContentE.objects.all()
-    return render(request, 'indexE.html', {'contentE': contentE})
+def index(request):
+    about = Aboutsection.objects.first()
+    services = Service.objects.all()  # Fetch all service items
+    testimonials = Testimonial.objects.all()
+
+    return render(request, 'index.html', {
+        'about': about,
+        'services': services,
+        'testimonials':testimonials,
+    })
 
 def indexM(request):
-    contentM = ContentM.objects.all()
-    return render(request, 'indexM.html', {'contentM': contentM})
+    aboutM = AboutsectionM.objects.first()
+    servicesM = ServiceM.objects.all()  # Fetch all service items
+    testimonialsM = TestimonialM.objects.all()
 
-def index(request):
-    return render(request, 'index.html')
+    return render(request, 'indexM.html', {
+        'aboutM': aboutM,
+        'servicesM': servicesM,
+        'testimonialsM':testimonialsM,
+    })
+
 

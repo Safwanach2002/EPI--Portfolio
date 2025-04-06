@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>Dominic - Responsive HTML5 OnePage Template</title>  
+    <title>EPI - English</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -59,55 +59,60 @@
 	
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="{% static 'images/logo.png' %}" alt="" />
-		</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contect Us</a>
-            </li>
-          </ul>
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger d-flex align-items-center" href="#page-top" style="font-size: 1.1rem;">
+                <img src="{% static 'images/logo.jpg' %}" alt="Logo" class="img-fluid"
+                    style="height: 40px; width: 40px; margin-right: 10px; border-radius: 50%; object-fit: cover;">
+                Easy Purchase Investment
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li> -->
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#testimonials">Quotes</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- Play Store Download Button -->
+                <!-- <a href="https://play.google.com/store/apps/details?id=com.saoirse.epi" target="_blank" class="ml-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
+                </a> -->
+            </div>
         </div>
-      </div>
     </nav>
 	
-	<section id="home" class="main-banner parallaxie" style="background: url('static/uploads/banner-01.jpg')">
+	<section id="home" class="main-banner parallaxie" style="background: url('{% static 'uploads/banner-01.jpg' %}')">
 		<div class="heading">
-			<h1>hello i'm Dominic</h1>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-			<h3 class="cd-headline clip is-full-width">
-				<span>Lorem ipsum dolor sit amet </span>
-				<span class="cd-words-wrapper">
-					<b class="is-visible">Web Developer</b>
-					<b>Web Design</b>
-					<b>Creative Design</b>
-					<b>Graphic Design</b>
-				</span>
-			</h3>
+			<h1 style="font-size: 3rem;">Easy Purchase Investment</h1>
+			<p>A Smart Way to Own Your Desired Products</p>
+            <h3 class="cd-headline clip is-full-width">
+                <span style="font-size: 1.2rem;">With EPI, you can</span>
+                <span class="cd-words-wrapper">
+                    <b class="is-visible" style="font-size: 1.7rem;">Own Products Easily</b>
+                    <b style="font-size: 1.7rem;">Invest Small Daily</b>
+                    <b style="font-size: 1.7rem;">No Upfront Payment</b>
+                    <b style="font-size: 1.7rem;">Turn Dreams into Reality</b>
+                </span>
+            </h3>            
 		</div>
 	</section>
 
@@ -136,100 +141,124 @@
         </path>
     </svg>
 
+    <!-- About Section -->
     <div id="about" class="section wb">
         <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h2 >{{ about.title }}</h2>
+                        {% if about.paragraph1  %}
+                            <p>{{ about.paragraph1  }}</p>
+                        {% endif %}
+                        {% if about.paragraph2 %}
+                            <p>{{ about.paragraph2 }}</p>
+                        {% endif %}
+                        <a href="https://play.google.com/store/apps/details?id=com.saoirse.epi" class="sim-btn btn-hover-new" data-text="Explore Now"><span>Explore Now</span></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn"></div>
+                        {% if about.image %}
+                            <img style="height: 23rem; width: 35rem;" src="{{ about.image.url }}" alt="About Image" class="img-fluid img-rounded">
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section wb">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                        <h2>About Dominic.</h2>
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
-						<p>Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo.</p>
+                <div class="col-md-10">
+                    <div class="message-box">
+                        <h2 style="font-size: 1.8rem;">What Can You Buy Through EPI?</h2>
+                        <p>EPI provides access to a wide range of products, including:</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Smartphones & Laptops – Top brands like Apple, Samsung, Dell, HP, and more.</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Electronics & Accessories – Bluetooth earphones, headphones, power banks, chargers, and more.</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Home Appliances – TVs, refrigerators, washing machines, and kitchen appliances.</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Automobile Accessories – E-bikes, car accessories, and tires.</li>
+                            <li><i class="fa fa-check-circle text-success me-2"></i> Fashion & Lifestyle Products – Smartwatches, branded clothing, and accessories.</li>
+                        </ul>
 
-                        <a href="#" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
+                        <p class="mt-4">With EPI, purchasing your dream product becomes effortless. Invest small amounts daily, and once your investment reaches the required amount, you can own the product you desire.</p>
 
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="{% static 'uploads/about_04.jpg' %}" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+                        <h2 class="mt-5"style="font-size: 1.8rem;">How Does EPI Work?</h2>
+                        <ul class="list-unstyled">
+                            <li><strong>1.</strong> Download the Application – Available on Android & iOS.</li>
+                            <li><strong>2.</strong> Choose Your Desired Product – Select from a variety of categories.</li>
+                            <li><strong>3.</strong> Invest Small Amounts Daily – Like a digital savings plan, your small investments accumulate over time.</li>
+                            <li><strong>4.</strong> Own the Product Upon Completion – Once your investment is complete, the product is yours!</li>
+                        </ul>
+
+                        <h2 class="mt-5"style="font-size: 1.8rem;">Additional Earning Opportunities with EPI!</h2>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-gift text-primary me-2"></i> <strong>Referral Bonuses</strong> – Invite friends, and earn when they purchase products.</li>
+                            <li><i class="fa fa-star text-warning me-2"></i> <strong>Lucky Draws & Bonuses</strong> – Exclusive benefits for active users.</li>
+                            <li><i class="fa fa-calendar-check text-success me-2"></i> <strong>Daily App Usage Rewards</strong> – Get additional perks just by being an active user.</li>
+                        </ul>
+
+                        <h2 class="mt-5"style="font-size: 1.8rem;">Why Choose EPI?</h2>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-thumbs-up text-info me-2"></i> Own Your Dream Product Easily – No need for large upfront payments.</li>
+                            <li><i class="fa fa-tags text-danger me-2"></i> Get Products at a Lower Price – Save more compared to market rates.</li>
+                            <li><i class="fa fa-shield-alt text-secondary me-2"></i> Secure & Transparent System – No hidden fees, fully user-friendly.</li>
+                            <li><i class="fa fa-headset text-success me-2"></i> Reliable Customer Support – Get assistance whenever you need it.</li>
+                        </ul>
+
+                        <h2 class="mt-5"style="font-size: 1.8rem;">Frequently Asked Questions (FAQs)</h2>
+                        <p><strong>Q: How do I purchase products through EPI?</strong><br>
+                        A: Select your desired product, invest small amounts daily, and own the product once your investment is complete.</p>
+
+                        <p><strong>Q: Is EPI a trustworthy platform?</strong><br>
+                        A: Yes, EPI is a legitimate business model where your investments directly help you acquire products, ensuring you get value for your money.</p>
+
+                        <p><strong>Q: How does the referral system work?</strong><br>
+                        A: Invite your friends, and you’ll earn rewards when they join and start investing in products.</p>
+
+                        <p><strong>Q: Can I withdraw my earnings?</strong><br>
+                        A: Yes, you can use your earnings to purchase products or withdraw as cash.</p>
+
+                        <p class="mt-5"><strong>EPI – Turning Small Investments into Big Possibilities! Start Today and Own Your Dream Product!</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	
     <div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Services</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+                <p>Easily manage your savings, shopping, and earnings with flexible plans, product authenticity, and essential offers.</p>
             </div><!-- end title -->
 
             <div class="row">
+                {% for service in services %}
 				<div class="col-md-4">
                     <div class="services-inner-box">
 						<div class="ser-icon">
-							<i class="flaticon-seo"></i>
+							<!-- <i class="flaticon-seo"></i> -->
+                             <img src="{{ service.icon.url }}" alt="{{ service.title }}" style="width: 60px; height: 60px; object-fit: contain;"> 
 						</div>
-						<h2>Web Development</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h4>{{ service.title }}</h4>
+                        <p>{{ service.description }}</p>
 					</div>
                 </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-development"></i>
-						</div>
-						<h2>Responsive Design</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-process"></i>
-						</div>
-						<h2>Creative Design</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-discuss-issue"></i>
-						</div>
-						<h2>Support</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-idea"></i>
-						</div>
-						<h2>Web Idea</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-idea-1"></i>
-						</div>
-						<h2>Graphic Design</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-                </div><!-- end col -->
+                {% endfor %}
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
 	
-	<div id="portfolio" class="section lb">
+	<!-- <div id="portfolio" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
                 <h3>Portfolio</h3>
                 <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
-            </div><!-- end title -->
+            </div>
 			
 			<div class="gallery-menu row">
 				<div class="col-md-12">
@@ -298,107 +327,46 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	
 	<div id="testimonials" class="section wb">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Testimonials</h3>
-                <p>We thanks for all our awesome testimonials! There are hundreds of our happy customers! </p>
+                <h3>Quotes</h3>
+                <p>Great words have the power to ignite your soul and transform your journey. Let these inspiring thoughts guide you toward endless possibilities.</p>
             </div><!-- end title -->
-
+ 
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <div class="testi-carousel owl-carousel owl-theme">
+                    <div class="owl-carousel testimonials-carousel">
+                        {% for testimonial in testimonials %}
                         <div class="testimonial clearfix">
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                                <h3><i class="fa fa-quote-left"></i> {{ testimonial.quote_title }}</h3>
+                                <p class="lead">{{ testimonial.feedback }}</p>
                             </div>
                             <div class="testi-meta">
-                                <img src="{% static 'uploads/testi_01.png' %}" alt="" class="img-fluid alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
+                                <img src="{{ testimonial.image.url }}" alt="" class="img-fluid alignleft">
+                                <h4>{{ testimonial.name }} <small>- {{ testimonial.role }}</small></h4>            
                             </div>
                             <!-- end testi-meta -->
                         </div>
                         <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="{% static 'uploads/testi_02.png' %}" alt="" class="img-fluid alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="{% static 'uploads/testi_03.png' %}" alt="" class="img-fluid alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="{% static 'uploads/testi_01.png' %}" alt="" class="img-fluid alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="{% static 'uploads/testi_02.png' %}" alt="" class="img-fluid alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="{% static 'uploads/testi_03.png' %}" alt="" class="img-fluid alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div><!-- end testimonial -->
-                    </div><!-- end carousel -->
+                        {% endfor %}
+                    </div>
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
 	
-	<div id="blog" class="section lb">
+	<!-- <div id="blog" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
                 <h3>Blog</h3>
                 <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
-            </div><!-- end title -->
+            </div> -->
 			
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
@@ -460,15 +428,14 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
-	</div>
+	</div> -->
 
     <div id="contact" class="section db">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Contact</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
             </div><!-- end title -->
 
             <div class="row">
@@ -522,8 +489,7 @@
                         <a href="#">Faq</a>
                         <a href="#">Contact</a>
                     </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By : 
-					<a href="https://html.design/">html design</a></p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2025 <a href="#">EPI</a>
                 </div>
             </div>
         </div><!-- end container -->
