@@ -28,4 +28,5 @@ def indexM(request):
         'testimonialsM':testimonialsM,
     })
 
-
+def privacy_view(request):
+   return render(request, 'privacy.html')
