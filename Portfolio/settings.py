@@ -77,10 +77,10 @@ WSGI_APPLICATION = "Portfolio.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'epiportfolio',
-        'USER': 'root',
-        'PASSWORD': '',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'epidb',
+        'USER': 'Safwana',
+        'PASSWORD': 'Safwana@2002',
         'HOST': 'localhost',
         'PORT': '3306'
     }
